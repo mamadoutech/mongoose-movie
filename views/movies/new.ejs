@@ -1,0 +1,29 @@
+
+    <%- include("../partials/html-head") %>
+    <link rel="stylesheet" href="../../form.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <%- include("../partials/nav") %>
+
+    <section>
+    <div class="welcome_container">
+        <h1 class="welcome"><%= title %></h1>
+    </div>
+    <div class="form_container">
+        <form action="/movies" method="POST" class="add_movie">
+            <div>
+                <div class="form_line"><label for="title_input">Title</label><input type="text" id="title_input" name="title"></div>
+            <div class="form_line"><label for="release_input">Release Year</label><input type="number" id="release_input" name="releaseYear"></div>
+            <div class="form_line form_line2"><label for="rating_select">MPAA Rating</label><select class="rating" id="rating_select" name="mpaaRating"><option>G</option><option>PG</option><option>PG 13</option><option>R</option></select></div>
+            <div class="form_line"><label for="showing_check">Now Showing</label><input type="checkbox" id="showing_check" name="nowShowing">
+            </div>
+            <div class="add_movie_button_container"> <button class="add_movie_button" type="submit">Add Movie</button></div>
+           
+        </div>
+        
+        </form>
+    </div>
+</section>
+    
+    
+</div>
+<%- include("../partials/footer") %>

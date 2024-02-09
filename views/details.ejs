@@ -1,0 +1,25 @@
+<%-include("../partials/html-head.ejs)%>
+<%-include("../partials/nav.ejs)%>
+    <section>
+    <div class="welcome_container">
+        <h1 class="welcome"><%= title%></h1>
+    </div>
+</section>
+<!--  -->
+<div class="form_container">
+    <form action="/movies" method="post" class="add_movie">
+        <div>
+            <div class="form_line"><label for="title_input">Title</label><p id="title_input" name="title"><%=movie.title%></p></div>
+        <div class="form_line"><label for="release_input">Release Year</label><pid="release_input" name="releaseYear"><%=movie.releaseYear%></p></div>
+        <div class="form_line form_line2"><label for="rating_select">MPAA Rating</label><p class="rating" id="rating_select" name="cast"><%=movie.cast%></p></div>
+        <div class="form_line"><label for="showing_check">Now Showing</label><p type="checkbox" id="showing_check" name="nowShowing"><%=movie.nowShowing%></p>
+        </div>
+       
+    </div>
+    
+    </form>
+</div>
+    
+    
+</div>
+<%- include("../partials/footer")%>

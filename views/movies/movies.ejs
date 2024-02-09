@@ -1,0 +1,17 @@
+<%- include("../partials/html-head") %>
+<%- include("../partials/nav") %>
+    <section>
+    <div class="welcome_container">
+        <h1 class="welcome"><%= title %></h1>
+    </div>
+</section>
+<!--  -->
+<div class="movies">
+    <div class="movies_sub"><span class="title"><strong>Title</strong></span><span class="releaseYear"><strong>releaseYear</strong></span><span class="none"><strong>Details</strong></span><span class="delete"><strong>Delete</strong></span></div>
+    <% for(movie of movies) {%>
+        <div class="movies_sub"><span class="sub_title"><%= movie.title %></span><span class="sub_releaseYear"><%=movie.releaseYear%></span><span class="sub_none"><a href="/movies/<%=movie._id%>">details</a></span><span class="cross"><form action="/movies/<%=movie._id%>?_method=delete" method="post" ><button type="submit">❌</button></form></span></div>
+        <% }%>
+        </div>
+    
+</div>
+<%-include("../partials/footer")%>

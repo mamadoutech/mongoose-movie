@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+header {
+  background-color: #ced4da;
+}
+.navigation {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-resources li a.active {
+  color: #2590c2 !important;
+}
+.movieIcon {
+  width: 5rem;
+}
+.nav-resources {
+  display: flex;
+  list-style: none;
+  gap: 1.4rem;
+  font-size: 1.4rem;
+}
+.nav-resources li a:link,
+.nav-resources li a:visited {
+  text-decoration: none;
+  color: #212529;
+}
+.nav-resources li a:hover,
+.nav-resources li a:active {
+  color: white;
+  transition: 0.2s;
+}
+
+.second_section {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.displayed_details {
+  font-size: 1.4rem;
+}
+.subdetail_container {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.cast {
+  margin-bottom: 1.2rem;
+}
+.review_heading_container {
+  display: flex;
+  justify-content: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.review_container {
+  display: flex;
+  justify-content: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.review_imputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.add_review_button {
+  justify-self: left;
+  padding: 0.3rem 0.6rem;
+  margin-right: 1.55rem;
+}
+.select {
+  max-width: 16.46rem;
+}
+.welcome_container {
+  margin-bottom: 3rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+/*  */
+.form_container {
+  margin-top: 2.5rem !important;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.add_movie {
+  margin: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  max-width: 50rem;
+}
+.form_line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  width: 35rem;
+}
+.add_movie_button_container {
+  width: 35rem;
+  display: flex;
+  justify-content: end;
+}
+.add_movie_button {
+  margin-left: 20rem;
+  padding: 0.3rem 0.6rem;
+  justify-self: end;
+}
+.rating {
+  width: 16.61rem;
+}
+.single_movie_row {
+  display: flex;
+}
+/*  */
+.movies {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movies_sub {
+  max-width: 60rem !important;
+  display: flex;
+  gap: 0.1rem;
+}
+.title {
+  padding: 0.1rem 0.2rem;
+  border-bottom: 0.11rem solid black;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+}
+.releaseYear {
+  padding: 0.1rem 0.2rem;
+  border-bottom: 0.11rem solid black;
+  display: flex;
+  width: 6rem;
+  justify-content: center;
+}
+.none {
+  padding: 0.1rem 0.2rem;
+  width: 4rem;
+  justify-content: center;
+  border-bottom: 0.11rem solid black;
+}
+/*  */
+.sub_title {
+  padding: 0.1rem 0.2rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+}
+.sub_releaseYear {
+  padding: 0.1rem 0.2rem;
+
+  display: flex;
+  width: 5rem;
+  justify-content: flex-start;
+}
+.sub_none {
+  padding: 0.1rem 0.2rem;
+  width: 3rem;
+  justify-content: center;
+}
+.cross {
+  padding: 0.1rem 0.2rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: end;
+}
+.delete {
+  padding: 0.1rem 0.2rem;
+  display: flex;
+  width: 4rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 0.11rem solid black;
+}
+.update_button_container {
+  margin-top: 2rem !important;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  padding: 0.2rem 0.4rem;
+}
+.btn a:link,
+.btn a :visited {
+  text-decoration: none;
+}
+.container_perf {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_perf {
+  display: block;
+  margin-top: 0.5rem;
+}
+.input_perf {
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+.nameLabel {
+  margin-right: 0.3rem;
+}
+.table_container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.row {
+  text-align: center;
+  margin: 0 auto;
+}
+thead {
+  max-width: 40rem !important;
+}
+table {
+  width: 40%;
+}
+.reviewH {
+  text-align: center;
+  margin: 2rem 0;
+}
+th {
+  border-bottom: 0.18rem solid black;
+}

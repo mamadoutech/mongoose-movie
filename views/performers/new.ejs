@@ -1,0 +1,23 @@
+<%- include("../partials/html-head") %>
+<%- include("../partials/nav") %>
+    <section>
+    <div class="welcome_container">
+        <h1 class="welcome"><%= title %></h1>
+    </div>
+</section>
+
+<div class="container_perf">
+ <form action="/performers" method="post">
+    <label>Please ensure that the performer is not in the dropdown</label><select>
+        <% for (performer of performers){%>
+        <option><%=performer.name%></option>
+        <%}%>
+    </select>
+    <div><label class="nameLabel">name</label><input class="input_perf" type="text" name="name"></div>
+    
+    <button class="btn_perf" type="submit">Add Performer</button>
+ </form>
+</div>
+    
+</div>
+<%-include("../partials/footer")%>
